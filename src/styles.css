@@ -18,7 +18,7 @@ body {
     max-width: 100%;
     box-shadow: none;
     background-color: black;
-    position: fixed;
+    position: relative;
     height: 60px!important;
     overflow: hidden;
 	z-index: 10;
@@ -47,7 +47,7 @@ body {
     position: fixed;
     left: 0;
     width: 250px;
-    margin-top: 60px;
+    margin-top: 0px;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
 	background: linear-gradient(180deg, #111 0%, #E7E9BB 100%);

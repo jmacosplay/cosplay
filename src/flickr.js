@@ -14,6 +14,20 @@ export const fetchImages = () => {
   })
 };
 
+export const fetchSize = (myid) => {
+  var array = [];
+  const API_SIZE = `https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=${API_KEY}&photo_id=${myid}&format=json&nojsoncallback=1`;
+    return fetch(API_SIZE).then((response) => {
+        return response.json().then((json) => {
+          return json.sizes.size.map(({label, width, height}) => `${label},${width},${height}`);//{ 
+            /*if (label == 'Thumbnail') {
+              return [width,height];
+            }*/
+          //})
+        })
+      })
+};
+
 export const fetchDesc = () => {
   var str="";
   const API_SIZE = `https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=${API_KEY}&photo_id=${myid}&format=json&nojsoncallback=1`;
