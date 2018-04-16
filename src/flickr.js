@@ -1,6 +1,6 @@
 const API_KEY = 'a46a979f39c49975dbdd23b378e6d3d5';
 const USER_ID = '156990471@N07';
-const API_ENDPOINT = `https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=${API_KEY}&user_id=${USER_ID}&format=json&nojsoncallback=1&per_page=5&per_page=5`;
+const API_ENDPOINT = `https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=${API_KEY}&user_id=${USER_ID}&format=json&nojsoncallback=1`;
 
 var myid = 0;
 
