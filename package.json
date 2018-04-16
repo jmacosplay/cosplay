@@ -1,0 +1,33 @@
+{
+  "name": "jmacosplay",
+  "version": "0.0.1",
+  "description": "Jma Cosplay",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "babel-node ./src/saga.spec.js | tap-spec",
+    "start": "budo ./src/main.js:build.js --dir ./src --verbose --live -- -t babelify"
+  },
+  "author": "Jianyang Ma",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "babel-polyfill": "6.3.14",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-images": "^0.5.6",
+    "react-redux": "^4.4.1",
+    "redux": "^3.3.1",
+    "redux-saga": "^0.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.1.18",
+    "babel-core": "6.4.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-2": "^6.1.18",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "budo": "^8.0.4",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.2.2"
+  }
+}
